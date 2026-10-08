@@ -2,16 +2,24 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-  <title>Cineterror</title>
+  <title>CineTerror</title>
 </head>
 <body>
-    <h1>Este é o Cineterror!</h1>
+    <h1>Este é o CineTerror!</h1>
     <hr>
-    <p>Site fictício criado apenas para uma atividade.</p>
+    <p id="mensagem"> Para o entreterimento.</p>
+    <button onclick="inicio()">Clique para começar</button>
+    <br><br>
     <!-- Link para a segunda página -->
     <a href="recomendacoes.html">Ver recomendações de filmes</a>
     <script>
-        window.alert('Bem-Vindo ao CineTerror!')
+        function inicio(){
+            // Guarde a frase na variável
+            let mensagemTerror = 'Prepare-se para o terror!';
+            // Pega o parágrafo no DOM e troca o texto e a cor 
+            document.getElementById('mensagem'). innerText = mensagemTerror;
+            document.getElementById('mensagem').style.color = "red";
+        }
     </script>
 </body>
 </html>
